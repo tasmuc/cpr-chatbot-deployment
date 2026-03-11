@@ -1,0 +1,29 @@
+services:
+  rasa:
+    container_name: crp_chatbot
+    image: rasa/rasa:3.6.20-full
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - --enable-api
+      - --cors
+      - "*"
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: "rasa_db"
+      POSTGRES_USER: "rasa_user"
+      POSTGRES_PASSWORD: "rasa_password"
+    ports:
+      - "5432:5432"
+
+  analytics:
+    container_name: analytics
+    build: ./analytics
+    ports:
+      - "5006:3000"
