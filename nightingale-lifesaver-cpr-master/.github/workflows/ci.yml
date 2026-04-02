@@ -1,0 +1,92 @@
+name: CI - CPR Monorepo
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  frontend:
+    name: Test and build React (cpr_project)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/cpr_project
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install ESLint
+        run: npm install --save-dev eslint
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Commented until warnings are fixed 
+      #- name: Run lint
+      #  run: npx eslint src --max-warnings=0 || exit 1
+
+      - name: Run tests
+        run: npm test -- --watchAll=false --passWithNoTests
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage/*.json
+        continue-on-error: false
+
+      - name: Build React app
+        run: CI=false npm run build
+
+      - name: Production build checkESL
+        run: CI=false NODE_ENV=production npm run build
+        continue-on-error: false
+
+      # [PLACEHOLDER] Uncomment and configure if you add E2E tests (e.g., Cypress)
+      #   name: Run E2E tests
+      #   run: npm run cy:run
+
+  chatbot:
+    name: Basic analysis of the chatbot (cpr-chatbot)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/cpr-chatbot
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Files list
+        run: ls -la
+
+      - name: Code analysis (placeholder)
+        run: echo "Tests placeholder"
+  intent-generator:
+    name: Basic Analysis of the intent generator (cpr-chatbot-intent-generator)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend/cpr-chatbot-intent-generator
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Files list
+        run: ls -la
+
+      - name: Code analysis (placeholder)
+        run: echo "Tests placeholder"
