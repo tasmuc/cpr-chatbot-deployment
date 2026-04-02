@@ -1,0 +1,498 @@
+@import '../../style.css';
+
+.about-container {
+  min-height: calc(100vh - 160px);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+.about-end-margin {
+  margin-bottom: 80px;
+}
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="1" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.badge-icon {
+  font-size: 20px;
+}
+
+.badge-text {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 48px;
+  color: var(--text-dark);
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.stat-item {
+  text-align: center;
+  color: var(--text-dark)
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--text-dark)
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 0 auto 24px;
+}
+
+.mission-icon {
+  background: linear-gradient(135deg, #3B82F6, #1D4ED8);
+}
+
+.features-icon {
+  background: linear-gradient(135deg, #10B981, #059669);
+}
+
+.team-icon {
+  background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+}
+
+.impact-icon {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.tech-icon {
+  background: linear-gradient(135deg, #6B7280, #4B5563);
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.section-titleb {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+/* Mission Content */
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.team-card {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  background: #F9FAFB;
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.funding-logo {
+  background: linear-gradient(135deg, #ff0000, #c8c8c8);
+}
+
+.funding-icon {
+  font-size: 40px;
+  color: white;
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.team-institution {
+  font-size: 16px;
+  color: var(--primary-red);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.team-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.team-link {
+  color: var(--primary-red);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.team-link:hover {
+  color: #B91C1C;
+  text-decoration: underline;
+}
+
+/* Impact Section */
+.impact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #a09e9e 100%);
+  color: white;
+}
+
+.impact-content {
+  text-align: center;
+
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin: 48px 0;
+}
+
+.impact-item {
+  text-align: center;
+  padding: 24px;
+  background: rgba(136, 136, 136, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(111, 44, 44, 0.5);
+}
+
+.impact-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.impact-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.impact-description {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.impact-message {
+  max-width: 600px;
+  margin: 48px auto 0;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.impact-message p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 16px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto 32px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .section-title,
+  .section-titleb {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .team-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .team-logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+  }
+
+  .team-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .team-institution {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .team-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .impact-section {
+    padding: 60px 16px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .impact-number {
+    font-size: 32px;
+  }
+
+  .impact-description {
+    font-size: 14px;
+  }
+
+  .impact-message {
+    padding: 24px;
+    margin: 32px 16px 0;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 50px 12px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .impact-number {
+    font-size: 28px;
+  }
+
+  .team-card {
+    padding: 16px;
+  }
+
+  .team-logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .section-title,
+  .section-titleb {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .mission-text {
+    font-size: 14px;
+  }
+
+  .impact-message {
+    padding: 16px;
+    margin: 24px 12px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .emergency-banner {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .emergency-number {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+  }
+}

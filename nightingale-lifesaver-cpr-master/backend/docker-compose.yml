@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+      - "5005:5005"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_SSL=${DB_SSL}
+      - CHATBOT_API_URL=${CHATBOT_API_URL}
+      - RASA_PORT=${RASA_PORT}
+      - API_PORT=${API_PORT}
+    env_file:
+      - .env
+    volumes:
+      - ./cpr-chatbot:/app/cpr-chatbot
+    restart: unless-stopped
+   db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: "rasa_db"
+      POSTGRES_USER: "rasa_user"
+      POSTGRES_PASSWORD: "rasa_password"
+    ports:
+      - "5432:5432" 
