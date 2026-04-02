@@ -40,11 +40,9 @@
 #  username: username
 #  password: password
 #  queue: queue
+
 tracker_store:
-  type: sql
-  dialect: "postgresql"
-  url: "db"
-  port: 5432 
-  db: "rasa_db"
-  username: "rasa_user"
-  password: "rasa1234"
+    type: sql
+    dialect: "sqlite"
+    url: "rasa.db"
+    db: "conversations.db"
