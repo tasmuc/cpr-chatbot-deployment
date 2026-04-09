@@ -42,7 +42,6 @@
 #  queue: queue
 
 tracker_store:
-    type: sql
-    dialect: "sqlite"
-    url: "rasa.db"
-    db: "conversations.db"
+    type: SQL
+    dialect: "postgresql"
+    url: "postgresql://rasa_user:rasa1234@db:5432/rasa_db"

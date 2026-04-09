@@ -269,20 +269,36 @@ nlu:
 - intent: child_cpr
   examples: |
     - child cpr
-    - cpr for children
-    - pediatric cpr
-    - infant cpr
-    - baby cpr
-    - toddler cpr
-    - child resuscitation
-    - cpr on kids
-    - how to do cpr on child
-    - child cardiac arrest
-    - infant cardiac arrest
-    - baby not breathing
-    - child emergency
-    - pediatric resuscitation
-    - newborn cpr
+    - tell me about child cpr
+    - can you explain child cpr
+    - what is child cpr
+    - how do I perform child cpr
+    - how to do cpr on a child
+    - steps for child cpr
+    - show me child cpr instructions
+    - explain cpr for children
+    - cpr for a child
+    - cpr for kids
+    - how do I help a child who needs cpr
+    - what are the steps for child cpr
+    - how is child cpr done
+    - what should I do for child cpr
+    - how do I give compressions to a child
+    - how deep are compressions for a child
+    - how fast should I do cpr on a child
+    - what is the compression rate for child cpr
+    - how is cpr different for a child
+    - instructions for child cpr please
+    - can you guide me through child cpr
+    - emergency child cpr steps
+    - how do I save a child with cpr
+    - what should I do if a child stops breathing
+    - how do I check responsiveness in a child
+    - how do I give breaths to a child during cpr
+    - child cpr procedure
+    - child resuscitation steps
+    - how do I perform rescue breaths on a child
+
 
 - intent: what_is_defibrillator
   examples: |
@@ -508,6 +524,18 @@ nlu:
     - Emergency call guidelines
     - Proper way to call emergency
     - Emergency call instructions
+    - intent: emergency_numbers
+    - what are the emergency numbers
+    - emergency numbers please
+    - give me emergency numbers
+    - what number do I call in an emergency
+    - who should I call in an emergency
+    - what is the emergency hotline
+    - show me emergency numbers
+    - how do I call for help
+    - what number should I dial for emergencies
+    - emergency contact number
+
 
 - intent: how_to_react
   examples: |

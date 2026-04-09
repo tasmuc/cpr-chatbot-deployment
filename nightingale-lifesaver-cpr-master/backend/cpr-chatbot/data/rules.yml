@@ -51,7 +51,7 @@ rules:
 
 - rule: Emergency numbers
   steps:
-  - intent: what_are_emergency_numbers
+  - intent: emergency_numbers
   - action: utter_emergency_numbers
 
 - rule: Symptoms description

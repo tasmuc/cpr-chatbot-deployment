@@ -509,36 +509,4 @@ responses:
   utter_iamabot:
   - text: |
       I am a bot, powered by Rasa, specialized in CPR and first aid guidance. 🤖
-      
       I'm here to help you with emergency procedures and first aid questions 24/7!
-
-actions:
-  - utter_greet
-  - utter_please_rephrase
-  - utter_cardiac_arrest_explanation
-  - utter_cpr_steps
-  - utter_emergency_numbers
-  - utter_emergency_numbers_examples
-  - utter_symptoms_description_one
-  - utter_choking_help
-  - utter_bleeding_control
-  - utter_burns_treatment
-  - utter_fracture_help
-  - utter_stroke_recognition
-  - utter_seizure_help
-  - utter_allergic_reaction
-  - utter_recovery_position
-  - utter_child_cpr
-  - utter_what_is_defibrillator
-  - utter_how_to_defibrillator
-  - utter_shock_treatment
-  - utter_hypothermia_help
-  - utter_heat_exhaustion
-  - utter_poisoning_help
-  - utter_drowning_rescue
-  - utter_thank_back
-  - utter_goodbye
-  - utter_did_that_help
-  - utter_happy
-  - utter_cheer_up
-  - utter_iamabot
