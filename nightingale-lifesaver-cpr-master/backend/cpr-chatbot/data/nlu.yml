@@ -524,7 +524,9 @@ nlu:
     - Emergency call guidelines
     - Proper way to call emergency
     - Emergency call instructions
-    - intent: emergency_numbers
+   
+- intent: emergency_numbers
+  examples: |
     - what are the emergency numbers
     - emergency numbers please
     - give me emergency numbers
@@ -828,8 +830,7 @@ nlu:
 
 - intent: deny
   examples: |
-    - no    - no
-    - n
+    - no
     - never
     - I don't think so
     - don't like that
@@ -840,3 +841,335 @@ nlu:
     - absolutely not not
     - definitely not
     - I disagree
+
+- intent: adult_cpr_steps
+  examples: |
+    - tell me about adult cpr
+    - what is adult cpr
+    - how does adult cpr work
+    - explain adult cpr
+    - what should I know about adult cpr
+    - give me information about adult cpr
+    - adult cpr guide
+    - adult cpr explanation
+    - how do people help adults in emergencies
+    - simple adult cpr information
+    - adult cpr basics
+    - what happens in adult cpr
+    - adult cpr overview
+    - can you explain adult cpr simply
+    - what is the idea of adult cpr
+    - adult cpr meaning
+    - how does adult cpr help someone
+    - adult cpr questions
+    - information about adult cpr please
+    - adult cpr details
+
+- intent: compression_depth
+  examples: |
+    - what is chest compression
+    - explain chest pushing in cpr
+    - what does compression mean in cpr
+    - tell me about pushing on the chest
+    - what is the idea of chest compressions
+    - how does chest pressing help in cpr
+    - explain compression depth in simple words
+    - what is the chest push in cpr
+    - what is the meaning of compression depth
+    - basic information about chest compressions
+    - what happens during chest pressing
+    - why do people push on the chest
+    - chest compression explanation
+    - simple chest compression meaning
+    - what is the purpose of chest pressing
+    - chest compression basics
+    - how does chest pushing help someone
+    - chest compression overview
+    - explain chest pressing simply
+    - chest compression info
+
+- intent: compression_rate
+  examples: |
+    - what is the cpr speed
+    - explain cpr rhythm
+    - what is the cpr rate
+    - how fast is cpr usually done
+    - what is the normal cpr tempo
+    - tell me about cpr rhythm
+    - what does compression rate mean
+    - explain cpr speed in simple words
+    - what is the usual cpr pace
+    - cpr rhythm information
+    - what is the cpr timing
+    - how quick is cpr normally
+    - cpr rhythm basics
+    - what is the idea of cpr speed
+    - simple cpr rhythm explanation
+    - cpr pace meaning
+    - how do people keep rhythm in cpr
+    - cpr speed overview
+    - explain cpr pace simply
+    - cpr rate info
+
+- intent: rescue_breaths
+  examples: |
+    - what are rescue breaths
+    - explain rescue breaths
+    - what does mouth to mouth mean
+    - tell me about giving air in cpr
+    - what is breathing help in cpr
+    - explain rescue breathing in simple words
+    - what is the idea of rescue breaths
+    - what does giving breaths mean
+    - how do people give air in emergencies
+    - simple rescue breath explanation
+    - rescue breath meaning
+    - what happens during rescue breaths
+    - why do people give breaths in emergencies
+    - rescue breathing basics
+    - explain breathing support in cpr
+    - what is the purpose of rescue breaths
+    - rescue breath overview
+    - simple rescue breathing info
+    - what is air support in cpr
+    - explain rescue breaths simply
+
+- intent: aed_pad_placement
+  examples: |
+    - what are aed pads
+    - where do aed pads usually go
+    - explain aed pad placement
+    - what is the position of aed pads
+    - tell me about aed pads
+    - how do people place aed pads in general
+    - what is the idea of pad placement
+    - aed pad information
+    - where are aed pads normally placed
+    - simple aed pad explanation
+    - what do aed pads do
+    - how do aed pads help
+    - aed pad basics
+    - explain aed pads simply
+    - what is the purpose of aed pads
+    - aed pad overview
+    - where do pads go in general
+    - aed pad meaning
+    - what should I know about aed pads
+    - aed pad questions
+
+- intent: aed_on_wet_person
+  examples: |
+    - can an aed be used on a wet person
+    - what happens if someone is wet
+    - is it safe to use aed on wet skin
+    - what should I know about aed and water
+    - explain aed use on wet people
+    - can aed work if the person is wet
+    - what about aed and water safety
+    - aed wet person information
+    - is aed safe near water
+    - simple aed water explanation
+    - can aed be used after swimming
+    - what if the person is wet from rain
+    - aed and water basics
+    - explain aed water rules
+    - what is aed water safety
+    - aed wet person meaning
+    - what should I know about wet skin and aed
+    - aed water overview
+    - is aed okay around water
+    - aed wet person questions
+
+- intent: when_to_start_cpr
+  examples: |
+    - when should cpr start
+    - how do I know if cpr is needed
+    - when is cpr important
+    - when do people begin cpr
+    - explain when to start cpr
+    - what are signs that cpr is needed
+    - when does someone need cpr
+    - simple cpr start explanation
+    - when is the right time for cpr
+    - how do I know when to begin cpr
+    - when do people usually start cpr
+    - when is cpr used
+    - cpr start meaning
+    - explain cpr timing
+    - when does cpr normally begin
+    - what tells me to start cpr
+    - cpr start basics
+    - when is cpr required
+    - cpr start overview
+    - when should cpr be done
+
+- intent: when_to_stop_cpr
+  examples: |
+    - when should cpr stop
+    - how do I know when to stop cpr
+    - when is it okay to stop cpr
+    - explain when cpr ends
+    - when do people stop cpr
+    - what are signs to stop cpr
+    - when is cpr finished
+    - simple cpr stop explanation
+    - when does someone not need cpr anymore
+    - when is it safe to stop cpr
+    - when does cpr usually end
+    - cpr stop meaning
+    - explain cpr stopping simply
+    - when is cpr no longer needed
+    - when do people end cpr
+    - cpr stop basics
+    - what tells me to stop cpr
+    - cpr stop overview
+    - when should cpr be ended
+    - when is cpr complete
+
+- intent: choking_adult
+  examples: |
+    - tell me about choking in adults
+    - what is adult choking
+    - explain adult choking
+    - what happens when an adult is choking
+    - adult choking information
+    - how do I know if an adult is choking
+    - signs of choking in adults
+    - adult choking explanation
+    - what should I know about adult choking
+    - simple adult choking info
+    - adult choking basics
+    - what does adult choking look like
+    - explain choking signs in adults
+    - adult choking overview
+    - how can I notice adult choking
+    - adult choking meaning
+    - what happens during adult choking
+    - adult choking questions
+    - adult choking symptoms
+    - adult choking guide
+
+- intent: choking_child
+  examples: |
+    - tell me about choking in children
+    - what is child choking
+    - explain child choking
+    - what happens when a child is choking
+    - child choking information
+    - how do I know if a child is choking
+    - signs of choking in children
+    - child choking explanation
+    - what should I know about child choking
+    - simple child choking info
+    - child choking basics
+    - what does child choking look like
+    - explain choking signs in children
+    - child choking overview
+    - how can I notice child choking
+    - child choking meaning
+    - what happens during child choking
+    - child choking questions
+    - child choking symptoms
+    - child choking guide
+
+- intent: cpr_general
+  examples: |
+    - cpr
+    - how do I do cpr
+    - teach me cpr
+    - i need cpr help
+    - can you explain cpr
+    - what is cpr
+    - cpr instructions please
+    - show me cpr steps
+    - how to do cpr
+    - help with cpr
+    - tell me about cpr
+    - explain how cpr works
+    - i want to learn cpr
+    - cpr guide
+    - cpr information
+    - what should i do for cpr
+    - how does cpr work
+    - give me cpr advice
+    - emergency cpr help
+    - cpr process
+    - steps for cpr
+    - what do i do in cpr
+    - cpr basics
+    - basic cpr explanation
+
+- intent: age_group_adult
+  examples: |
+    - adult
+    - it is an adult
+    - grown person
+    - a grown up
+    - a man
+    - a woman
+    - the person is an adult
+    - the victim is an adult
+    - adult person
+    - adult please
+    - talk about adult cpr
+    - cpr for an adult
+    - help for an adult
+    - the patient is an adult
+    - adult cpr info
+    - adult one
+    - it is for an adult
+    - this is an adult case
+    - adult age group
+    - adult category
+    - adult option
+
+- intent: age_group_child
+  examples: |
+    - child
+    - kid
+    - small child
+    - it is a child
+    - the person is a child
+    - the victim is a child
+    - a little kid
+    - a young child
+    - a small kid
+    - the patient is a child
+    - child please
+    - cpr for a child
+    - help for a child
+    - child cpr info
+    - child one
+    - it is for a child
+    - this is a child case
+    - child age group
+    - child category
+    - child option
+
+- intent: choking_general
+  examples: |
+    - choking
+    - someone is choking
+    - help choking
+    - choking emergency
+    - a person is choking
+    - i think they are choking
+    - they are choking
+    - the person is choking
+    - choking help please
+    - choking problem
+    - choking situation
+    - what do i do for choking
+    - how to help choking
+    - choking issue
+    - choking case
+    - emergency choking help
+    - i need help with choking
+    - someone might be choking
+    - looks like choking
+    - choking question
+    - choking advice
+    - choking support
+    - choking guidance
+    - can you help with choking
+    - choking info please
