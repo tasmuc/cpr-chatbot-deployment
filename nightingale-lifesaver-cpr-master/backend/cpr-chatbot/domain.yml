@@ -57,6 +57,22 @@ intents:
   - medical_history
   - comfort_victim
   - post_emergency_care
+  - adult_cpr_steps
+  - hands_only_cpr
+  - compression_depth
+  - compression_rate
+  - rescue_breaths
+  - aed_pad_placement
+  - aed_no_shock_advised
+  - aed_on_wet_person
+  - when_to_start_cpr
+  - when_to_stop_cpr
+  - choking_adult
+  - choking_child
+  - cpr_general
+  - age_group_adult
+  - age_group_child
+  - choking_general
 
 responses:
   utter_greet:
@@ -509,36 +525,135 @@ responses:
   utter_iamabot:
   - text: |
       I am a bot, powered by Rasa, specialized in CPR and first aid guidance. 🤖
-      
       I'm here to help you with emergency procedures and first aid questions 24/7!
 
-actions:
-  - utter_greet
-  - utter_please_rephrase
-  - utter_cardiac_arrest_explanation
-  - utter_cpr_steps
-  - utter_emergency_numbers
-  - utter_emergency_numbers_examples
-  - utter_symptoms_description_one
-  - utter_choking_help
-  - utter_bleeding_control
-  - utter_burns_treatment
-  - utter_fracture_help
-  - utter_stroke_recognition
-  - utter_seizure_help
-  - utter_allergic_reaction
-  - utter_recovery_position
-  - utter_child_cpr
-  - utter_what_is_defibrillator
-  - utter_how_to_defibrillator
-  - utter_shock_treatment
-  - utter_hypothermia_help
-  - utter_heat_exhaustion
-  - utter_poisoning_help
-  - utter_drowning_rescue
-  - utter_thank_back
-  - utter_goodbye
-  - utter_did_that_help
-  - utter_happy
-  - utter_cheer_up
-  - utter_iamabot
+  utter_adult_cpr:
+    - text: |
+        Adult CPR steps:
+        1. Check safety of the scene.
+        2. Check responsiveness and breathing.
+        3. Call emergency services.
+        4. Start chest compressions in the center of the chest.
+        5. Push hard and fast at 100-120 per minute, about 5-6 cm deep.
+        6. If trained, give 30 compressions and 2 rescue breaths.
+        7. Continue until help arrives or the person starts breathing.
+
+  utter_hands_only_cpr:
+    - text: |
+        1. Hands-only CPR is for people who do not know how to give rescue breaths.
+        2. First, call for help so the medical team can come as fast as possible.
+        3. Put the bottom of your hand in the middle of the person's chest.
+        4. Push hard and fast to the speed of a fast song like "Stayin' Alive."
+        5. Do not stop until the person moves or the ambulance crew takes over.
+        6. This keeps blood moving to the brain and helps save the person's life.
+
+  utter_compression_depth:
+    - text: |
+        1. For an adult, you must push the chest down about 5 centimeters deep.
+        2. Do not push too deep because you might hurt the person's inside organs.
+        3. The goal is to squeeze the heart so it can pump blood to the body.
+        4. Always let the chest come back up all the way after every push.
+        5. This helps the heart fill with blood again before you push down.
+        6. Pushing the right depth is very important to make CPR work well.
+
+  utter_compression_rate:
+    - text: |
+        1. The best speed for CPR is 100 to 120 pushes every minute.
+        2. If you go too slow, blood will not reach the brain or the heart.
+        3. If you go too fast, the heart cannot fill with blood between pushes.
+        4. Keep a steady rhythm and keep your arms straight for more power.
+        5. Try not to stop pushing so the blood keeps moving through the body.
+        6. If you get tired, ask another person to take your place and keep the speed.
+
+  utter_rescue_breaths:
+    - text: |
+        1. Tilt the person's head back and lift their chin to open the airway.
+        2. Close their nose with your fingers and put your mouth over theirs.
+        3. Give two breaths for one second each and check if their chest rises.
+        4. If the chest does not move, fix the head and try the second breath.
+        5. Start pushing the chest again immediately after you give the breaths.
+        6. These breaths give important oxygen to the person's lungs and blood.
+
+  utter_aed_pad_placement:
+    - text: |
+        1. Open the AED box and turn it on; the machine will talk to you.
+        2. Put the first sticky pad on the top right side of the bare chest.
+        3. Put the second pad on the lower left side, under the person's arm.
+        4. Make sure the pads are stuck firmly to the skin so they work.
+        5. Connect the wires to the AED machine if it asks you to do it.
+        6. The machine will check the heart to see if it needs an electric shock.
+
+  utter_aed_no_shock_advised:
+    - text: |
+        1. If the AED says "No shock," it does not mean the person is okay.
+        2. It means a shock cannot fix the heart's rhythm at this moment.
+        3. You must start pushing the chest again right away to keep them alive.
+        4. Keep the AED pads on the chest while you continue doing CPR.
+        5. The machine will check the heart again every two minutes by itself.
+        6. Follow the voice instructions until the person wakes up or help arrives.
+
+  utter_aed_on_wet_person:
+    - text: |
+        1. Water carries electricity, so move the person to a dry place first.
+        2. If they are in a puddle, pull them away before using the AED machine.
+        3. Use a towel or a shirt to dry their chest quickly before the pads.
+        4. Do not use alcohol to clean the skin because it can catch fire.
+        5. When the chest is dry, put the pads on and follow the AED's voice.
+        6. Drying the skin helps the electric shock go directly to the heart.
+
+  utter_when_to_start_cpr:
+    - text: |
+        1. Check if the person is awake by calling them and tapping their shoulder.
+        2. Watch their chest for 10 seconds to see if they are breathing normally.
+        3. If they are not breathing or making strange gasps, start CPR now.
+        4. Do not spend a lot of time looking for a pulse; just start pushing.
+        5. In an emergency, it is better to try CPR than to do nothing at all.
+        6. Starting quickly gives the person the best chance to survive.
+
+  utter_when_to_stop_cpr:
+    - text: |
+        1. Keep doing CPR until you see the person breathe or move normally.
+        2. You can stop for a moment if the AED machine is checking the heart.
+        3. Stop if a doctor or a nurse arrives and tells you to move away.
+        4. If the place becomes dangerous for you, move to a safe area.
+        5. You can also stop if you are too tired to push the chest correctly.
+        6. Otherwise, keep going to help the person stay alive as long as possible.
+
+  utter_choking_adult:
+    - text: |
+        1. If the person can talk or cough, tell them to keep coughing hard.
+        2. If they cannot breathe, stand behind them and put your arms around.
+        3. Make a fist and put it just above their belly button, under the ribs.
+        4. Pull your hands in and up very quickly to move the object.
+        5. Repeat these pushes until the food or object comes out of the mouth.
+        6. If the person faints, lay them on the floor and start CPR pushes.
+
+  utter_choking_child:
+    - text: |
+        1. Get down on your knees behind the child so you are at their height.
+        2. Place your fist above their belly button and hold it with your other hand.
+        3. Give quick pushes up and in, but use less force than for an adult.
+        4. Keep doing this until the object comes out or the child faints.
+        5. If the child stops breathing, start CPR and check their mouth.
+        6. Always take the child to a doctor after they have a choking accident.
+        
+  utter_ask_age_group:
+  - text: |
+        Are you asking about CPR for an adult or a child?
+  - text: |
+        Do you need CPR information for an adult or a child?   
+  - text: |
+        Should I explain CPR for an adult or for a child?
+ 
+  utter_ask_choking_age:
+  - text: |
+        Is the choking person an adult or a child?
+  - text: |
+        Do you need help for an adult or a child who is choking?
+  - text: |
+        Should I explain choking help for an adult or a child?
+  - text: |
+        Is the person who is choking a child or an adult?
+  - text: |
+        To guide you better, is the choking person a child or an adult?
+

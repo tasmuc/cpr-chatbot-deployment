@@ -41,7 +41,7 @@
 #  password: password
 #  queue: queue
 
-tracker_store:
-    type: SQL
-    dialect: "postgresql"
-    url: "postgresql://rasa_user:rasa1234@db:5432/rasa_db"
+# tracker_store:
+#   type: SQL
+#   dialect: "postgresql"
+#    url: "postgresql://rasa_user:rasa1234@db:5432/rasa_db"
