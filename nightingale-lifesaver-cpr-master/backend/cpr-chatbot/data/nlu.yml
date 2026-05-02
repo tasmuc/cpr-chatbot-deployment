@@ -864,6 +864,66 @@ nlu:
     - adult cpr questions
     - information about adult cpr please
     - adult cpr details
+    - How do I do CPR on an adult
+    - What are the steps for adult CPR
+    - How do I help an adult who is not breathing
+    - The person fell down, what do I do
+    - How do I start CPR for an adult
+    - How do I help an adult who is not moving
+    - How do I check an adult before CPR
+    - The adult is not breathing, should I do CPR
+    - How do I push on the chest for an adult
+    - Please tell me how to do CPR for an adult
+    - Someone collapsed, how do I help them
+    - The person is gasping, do I start CPR
+    - How do I help an adult with no pulse
+    - How do I do CPR step by step for an adult
+    - What do I do first when an adult collapses
+    - how do I do CPR on a man
+    - how do I do CPR on a woman
+    - it is an [adult](age_group)
+    - the person is an [adult](age_group)
+    - the patient is a [man](age_group)
+    - the patient is a [woman](age_group)
+    - this is an [adult](age_group) case 
+
+- intent: hands_only_cpr
+  examples: |
+    - How do I do hands-only CPR
+    - What is hands-only CPR
+    - Should I give breaths or only compressions
+    - Can I do CPR without breaths
+    - How do I push the chest without breaths
+    - How do I do CPR using only my hands
+    - When should I use hands-only CPR
+    - Do I need to give breaths or just push the chest
+    - What do I do if I cannot give rescue breaths
+    - Can I help someone with only chest pushes
+    - How do I do CPR if I do not want to give mouth-to-mouth
+    - Is hands-only CPR enough to save someone
+    - How fast do I push in hands-only CPR
+    - What should I do with my hands during hands-only CPR
+    - Can I do hands-only CPR if I am alone with the person
+    - How do I help someone with only chest pushes
+    - What do I do if I cannot give breaths
+    - Can I do CPR with just my hands
+    - How do I push the chest in hands-only CPR
+    - Do I only use my hands in this type of CPR
+    - When should I use only chest pushes
+    - Is hands-only CPR okay for adults
+    - How do I help if I do not want to do mouth-to-mouth
+    - Can I save someone with only chest pushes
+    - What do I do first in hands-only CPR
+    - How do I help someone if I can only use my hands
+    - What do I do if I cannot give mouth breaths
+    - Can I do CPR with only chest pushes
+    - How do I start hands-only CPR in an emergency
+    - What should I do if I am scared to give breaths
+    - Can I use hands-only CPR for a stranger
+    - How do I push the chest fast in hands-only CPR
+    - Do I need to open the airway in hands-only CPR
+    - Can I use hands-only CPR until help comes
+    - How do I keep the right speed in hands-only CPR
 
 - intent: compression_depth
   examples: |
@@ -887,6 +947,21 @@ nlu:
     - chest compression overview
     - explain chest pressing simply
     - chest compression info
+    - How deep do I push the chest
+    - How far do I press down in CPR
+    - How deep should compressions be
+    - Do I push the chest a little or a lot
+    - How much do I press in CPR
+    - How deep is the chest push for adults
+    - How deep do I push when I do CPR
+    - How far should the chest go down
+    - What is the right depth for CPR
+    - How deep should I push in hands-only CPR
+    - How deep do I press if the person is big
+    - How deep do I press if the person is small
+    - How deep should compressions be for an adult
+    - How deep should compressions be in an emergency
+    - How deep do I push the chest when they are not breathing
 
 - intent: compression_rate
   examples: |
@@ -910,6 +985,21 @@ nlu:
     - cpr speed overview
     - explain cpr pace simply
     - cpr rate info
+    - How deep do I push the chest
+    - How far do I press down in CPR
+    - How deep should compressions be
+    - Do I push the chest a little or a lot
+    - How much do I press in CPR
+    - How deep is the chest push for adults
+    - How deep do I push when I do CPR
+    - How far should the chest go down
+    - What is the right depth for CPR
+    - How deep should I push in hands-only CPR
+    - How deep do I press if the person is big
+    - How deep do I press if the person is small
+    - How deep should compressions be for an adult
+    - How deep should compressions be in an emergency
+    - How deep do I push the chest when they are not breathing
 
 - intent: rescue_breaths
   examples: |
@@ -933,6 +1023,21 @@ nlu:
     - simple rescue breathing info
     - what is air support in cpr
     - explain rescue breaths simply
+    - How do I give rescue breaths
+    - How do I do mouth-to-mouth
+    - How many breaths do I give in CPR
+    - How do I open the airway
+    - How do I blow air into the person
+    - How long is one breath in CPR
+    - What do I do if the chest does not rise
+    - How do I give two breaths after compressions
+    - How do I help someone breathe in CPR
+    - Do I close the nose when I give breaths
+    - How do I make the chest rise
+    - What do I do if the air does not go in
+    - How do I give breaths to an adult
+    - How do I give breaths safely
+    - How do I give breaths when I am alone
 
 - intent: aed_pad_placement
   examples: |
@@ -956,6 +1061,21 @@ nlu:
     - aed pad meaning
     - what should I know about aed pads
     - aed pad questions
+    - Where do I put the AED pads
+    - How do I place the pads on the chest
+    - Which side does the AED pad go on
+    - Where do I stick the AED pads
+    - Do I put the pads on bare skin
+    - Where is the top pad placed
+    - Where is the side pad placed
+    - How do I put AED pads on a man
+    - How do I put AED pads on a woman
+    - How do I place AED pads in an emergency
+    - Where do the pads go for CPR
+    - How do I know the pads are in the right place
+    - Where do I put the pads if the person is big
+    - Where do I put the pads if the person is small
+    - How do I place AED pads step by step
 
 - intent: aed_on_wet_person
   examples: |
@@ -979,6 +1099,21 @@ nlu:
     - aed water overview
     - is aed okay around water
     - aed wet person questions
+    - Can I use an AED if the person is wet
+    - Do I need to dry the chest before using an AED
+    - Can I use an AED after the person was in water
+    - Is it safe to use an AED in the rain
+    - What do I do if the chest is wet
+    - Can I use an AED on someone who was swimming
+    - Can I use an AED if the person is sweaty
+    - Do I dry the chest before putting the pads on
+    - Is AED safe near water
+    - Can I shock someone who is wet
+    - What do I do if the person is wet from the pool
+    - Can I use an AED on a drowning victim
+    - Do I need to wipe the chest before pads
+    - Is it dangerous to use AED on wet skin
+    - What should I do if the person is wet and not breathing
 
 - intent: when_to_start_cpr
   examples: |
@@ -1002,6 +1137,26 @@ nlu:
     - when is cpr required
     - cpr start overview
     - when should cpr be done
+    - When should I start CPR
+    - The person is [not breathing](breathing_status), do I start CPR
+    - They are [gasping](breathing_status), should I start CPR
+    - The person fell down, do I start CPR
+    - When do I begin chest pushes
+    - When do I start CPR after calling for help
+    - When do I start CPR if I am alone
+    - When do I start CPR if the person is [unconscious](consciousness)
+    - When do I start CPR if the person is not moving
+    - When do I start CPR if the person has no pulse
+    - When do I start CPR in an emergency
+    - When do I start CPR if the person is turning blue
+    - When do I start CPR if the person is breathing strangely
+    - When do I start CPR if the person is not waking up
+    - When do I start CPR if the person suddenly collapses
+    - the person is [not breathing](breathing_status)
+    - they are [gasping](breathing_status)
+    - the person is [not breathing normally](breathing_status)
+    - they are [barely breathing](breathing_status)
+    - the person is [not moving air](breathing_status)
 
 - intent: when_to_stop_cpr
   examples: |
@@ -1025,6 +1180,26 @@ nlu:
     - cpr stop overview
     - when should cpr be ended
     - when is cpr complete
+    - When do I stop CPR
+    - Do I stop CPR if the person starts breathing
+    - Do I stop CPR when help arrives
+    - Do I stop CPR if the person moves
+    - When do I stop pushing the chest
+    - Do I stop CPR if I am tired
+    - When is CPR not needed anymore
+    - When do I stop CPR if I am alone
+    - When do I stop CPR after using an AED
+    - Do I stop CPR if the person gasps
+    - When do I stop CPR if the person wakes up
+    - When do I stop CPR if someone else takes over
+    - When do I stop CPR in an emergency
+    - When do I stop CPR if the AED says "no shock"
+    - When do I stop CPR if the person starts breathing again
+    - the person is [unconscious](consciousness)
+    - they are [not responding](consciousness)
+    - the person is [not waking up](consciousness)
+    - they are [collapsed](consciousness)
+    - the person is [not reacting](consciousness)
 
 - intent: choking_adult
   examples: |
@@ -1048,6 +1223,21 @@ nlu:
     - adult choking questions
     - adult choking symptoms
     - adult choking guide
+    - How do I help a choking adult
+    - What do I do if an adult is choking
+    - The adult cannot breathe, what should I do
+    - How do I help someone choking on food
+    - How do I do the Heimlich on an adult
+    - The person is choking, how do I help
+    - How do I help a choking man
+    - How do I help a choking woman
+    - The adult cannot cough, what do I do
+    - How do I help someone who is choking badly
+    - What are signs that an adult is choking
+    - How do I help someone choking in a restaurant
+    - The adult is turning blue, what should I do
+    - How do I help someone choking and not speaking
+    - How do I help someone who swallowed something
 
 - intent: choking_child
   examples: |
@@ -1071,6 +1261,21 @@ nlu:
     - child choking questions
     - child choking symptoms
     - child choking guide
+    - How do I help a choking child
+    - What do I do if a child is choking
+    - My child is choking, what should I do
+    - How do I help a choking toddler
+    - How do I help a choking baby
+    - The child cannot breathe, what do I do
+    - How do I help a child choking on food
+    - How do I do back blows for a child
+    - How do I help a child who cannot cough
+    - What are signs that a child is choking
+    - The child is turning blue, what should I do
+    - How do I help a child who swallowed something
+    - How do I help a baby who is choking
+    - How do I help a child who cannot speak
+    - How do I help a child choking in a restaurant
 
 - intent: cpr_general
   examples: |
@@ -1098,6 +1303,21 @@ nlu:
     - what do i do in cpr
     - cpr basics
     - basic cpr explanation
+    - How do I do CPR in an emergency
+    - What are the steps of CPR
+    - How do I help someone with CPR
+    - How do I start CPR
+    - What do I do if someone is not breathing
+    - How do I check the person before CPR
+    - How do I do CPR if I am alone
+    - How do I do CPR step by step
+    - What is the first thing I do in CPR
+    - How do I help someone who collapsed
+    - How do I help someone who is not moving
+    - How do I do CPR safely
+    - How do I do CPR for a person who fell down
+    - How do I do CPR if the person is gasping
+    - How do I do CPR if the person is unconscious
 
 - intent: age_group_adult
   examples: |
@@ -1122,6 +1342,26 @@ nlu:
     - adult age group
     - adult category
     - adult option
+    - The person is grown
+    - The person is big
+    - It is a grown person
+    - Help for an adult
+    - CPR for an adult
+    - This is an adult person
+    - The person is not a child
+    - The person is older
+    - The person looks adult
+    - Treat this as an adult
+    - This is an adult body
+    - The patient is a [man](age_group)
+    - The patient is a [woman](age_group)
+    - The person is over 18
+    - This is adult CPR situation
+    - it is an [adult](age_group)
+    - the person is an [adult](age_group)
+    - the patient is a [man](age_group)
+    - the patient is a [woman](age_group)
+    - this is an [adult](age_group) case
 
 - intent: age_group_child
   examples: |
@@ -1145,6 +1385,26 @@ nlu:
     - child age group
     - child category
     - child option
+    - The person is small
+    - The person is young
+    - It is a young child
+    - Help for a child
+    - CPR for a child
+    - This is a child person
+    - The person is not an adult
+    - The person looks like a child
+    - The patient is a [boy](age_group)
+    - The patient is a [girl](age_group)
+    - This is a child CPR situation
+    - The person is under 12
+    - The person is a little kid
+    - This is a small child
+    - The person is a baby
+    - it is a [child](age_group)
+    - the person is a [child](age_group)
+    - the patient is a [boy](age_group)
+    - the patient is a [girl](age_group)
+    - this is a [child](age_group) case
 
 - intent: choking_general
   examples: |
@@ -1173,3 +1433,36 @@ nlu:
     - choking guidance
     - can you help with choking
     - choking info please
+    - How do I help someone who is choking
+    - What do I do if a person is choking
+    - The person cannot breathe, what should I do
+    - How do I help someone choking on food
+    - The person is coughing and choking, what do I do
+    - How do I help someone who swallowed something
+    - The person is choking badly, how do I help
+    - What are signs that someone is choking
+    - The person is turning blue, what should I do
+    - How do I help someone who cannot speak because of choking
+    - The person is choking and holding their throat, what do I do
+    - How do I help someone choking in a restaurant
+    - The person is choking and cannot cough, what should I do
+    - How do I help someone who is choking suddenly
+    - What do I do if someone is choking near me
+
+- intent: out_of_scope_first_aid
+  examples: |
+    - how to treat burns
+    - what do I do for a burn
+    - how to help someone with hypothermia
+    - what to do for frostbite
+    - how to stop bleeding
+    - how to treat a cut
+    - what to do for a broken arm
+    - how to help someone with heat stroke
+    - how to treat poisoning
+    - what to do for a sprain
+    - how to treat a wound
+    - first aid for burns
+    - first aid for hypothermia
+    - first aid for bleeding
+    - first aid for injuries
