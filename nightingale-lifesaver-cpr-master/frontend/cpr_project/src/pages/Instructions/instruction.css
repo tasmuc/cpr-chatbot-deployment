@@ -1,0 +1,155 @@
+/* === Main container === */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #fee2e2, #ffffff);
+  padding: 30px;
+}
+
+/* === Instruction Card === */
+.inst-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.audio-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pause-button {
+  background-color: #ffffff; /* rouge clair */
+}
+
+.inst-card:hover {
+  transform: translateY(-3px);
+}
+
+/* === Progress bar === */
+.inst-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: calc((var(--progress, 0) / 6) * 100%);
+  background: linear-gradient(90deg, #dc2626, #f87171);
+  border-radius: 6px 6px 0 0;
+  transition: width 0.3s ease;
+}
+
+/* === Title and Description === */
+.title-div h2 {
+  font-size: 1.6rem;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.title-div p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* === Image section === */
+.gif-img {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gif-img:hover {
+  transform: scale(1.03);
+}
+
+/* === Buttons container === */
+.button-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+/* === Buttons === */
+.button {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #b91c1c, #dc2626);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(220, 38, 38, 0.5);
+}
+
+.button:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.replay-button {
+  background: #23853f;
+  box-shadow: 0 4px 10px rgba(4, 170, 31, 0.4);
+}
+
+.replay-button:hover {
+  background: #015f20;
+  box-shadow: 0 4px 10px rgba(4, 170, 31, 0.4);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .inst-card {
+    padding: 30px 20px;
+  }
+
+  .title-div h2 {
+    font-size: 1.4rem;
+  }
+
+  .title-div p {
+    font-size: 1rem;
+  }
+
+  .gif-img {
+    max-width: 320px;
+  }
+
+  .button-div {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
