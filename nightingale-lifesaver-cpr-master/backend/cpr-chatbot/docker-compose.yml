@@ -1,0 +1,34 @@
+services:
+  rasa:
+    container_name: crp_chat
+    image: rasa/rasa:3.6.20
+    working_dir: /app
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    depends_on:
+      - db
+    command: >
+      rasa run
+      --enable-api
+      --cors "*"
+      --endpoints /app/endpoints.yml
+    restart: unless-stopped
+
+
+  db:
+    container_name: cpr_chatbot_db
+    image: postgres:15
+    environment:
+      POSTGRES_USER: rasa_user
+      POSTGRES_PASSWORD: rasa1234
+      POSTGRES_DB: rasa_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
