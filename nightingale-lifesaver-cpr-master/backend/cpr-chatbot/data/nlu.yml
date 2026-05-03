@@ -524,9 +524,10 @@ nlu:
     - Emergency call guidelines
     - Proper way to call emergency
     - Emergency call instructions
-   
+ 
 - intent: emergency_numbers
   examples: |
+    - intent: emergency_numbers
     - what are the emergency numbers
     - emergency numbers please
     - give me emergency numbers
